@@ -18,7 +18,7 @@ sobreventa y sin cobros duplicados.*
 | Enviar emails/tickets hace lenta la compra | Procesamiento asíncrono basado en eventos                                 |
 | "¿Aguanta la carga?"                       | Pruebas de carga con k6 y métricas en Grafana                             |
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 •⁠  ⁠Registro e inicio de sesión con *JWT* y roles (⁠ ADMIN ⁠, ⁠ ORGANIZADOR ⁠, ⁠ CLIENTE ⁠).
 •⁠  ⁠Gestión de eventos y mapa de asientos.
@@ -28,7 +28,7 @@ sobreventa y sin cobros duplicados.*
 •⁠  ⁠API documentada con OpenAPI/Swagger.
 •⁠  ⁠Métricas y salud de la app con Actuator, Prometheus y Grafana.
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 *Monolito modular con arquitectura hexagonal (puertos y adaptadores)* y comunicación entre módulos mediante **eventos
 de dominio**.
@@ -73,23 +73,23 @@ src/main/java/com/mautz/ticketrush/
 
 ## Stack tecnológico
 
-| Área                           | Tecnología                                    |
-|--------------------------------|-----------------------------------------------|
-| Lenguaje / Framework           | Java 21, Spring Boot, Maven                   |
-| Persistencia                   | PostgreSQL, Spring Data JPA, Flyway           |
-| Seguridad                      | Spring Security, JWT                          |
+| Área                           | Tecnología                                  |
+|--------------------------------|---------------------------------------------|
+| Lenguaje / Framework           | Java 24, Spring Boot, Maven                 |
+| Persistencia                   | PostgreSQL, Spring Data JPA, Flyway         |
+| Seguridad                      | Spring Security, JWT                        |
 | Caché y expiración de reservas | Redis (planificado)                         |
 | Mensajería                     | RabbitMQ o Kafka (planificado)              |
-| Testing                        | JUnit 5, Mockito, Testcontainers              |
-| Contenedores                   | Docker, Docker Compose                        |
+| Testing                        | JUnit 5, Mockito, Testcontainers            |
+| Contenedores                   | Docker, Docker Compose                      |
 | CI/CD                          | GitHub Actions (planificado)                |
 | Observabilidad                 | Actuator, Prometheus, Grafana (planificado) |
 | Pruebas de carga               | k6 (planificado)                            |
-| Documentación                  | OpenAPI / Swagger                             |
+| Documentación                  | OpenAPI / Swagger                           |
 
-## 🚀 Cómo ejecutarlo
+## Cómo ejecutarlo
 
-*Requisitos:* JDK 21, Maven (o el wrapper incluido) y Docker en ejecución.
+*Requisitos:* JDK 26, Maven (o el wrapper incluido) y Docker en ejecución.
 
 ⁠ bash
 # 1. Clonar
