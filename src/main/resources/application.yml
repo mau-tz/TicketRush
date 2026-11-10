@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ticketrush
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:dev-only-secret-change-me-dev-only-secret-change-me}
+    expiration-minutes: 60
+  booking:
+    hold-minutes: 10
+    max-seats: 6
+  admin:
+    email: ${ADMIN_EMAIL:admin@ticketrush.local}
+    password: ${ADMIN_PASSWORD:admin12345}
